@@ -8,11 +8,16 @@
       <ul>
         <li v-for="item in items" :key="item.id">
           <h4>
-            <a :href="item.url"><span>{{ item.title.slice(0,70) }}</span></a>
-            <small>by {{ item.user.id }}</small>
+            <a :href="item.url"><span>{{ item.title.slice(0,100) }}</span></a>
+            <small>
+              <span>by</span>
+              <nuxt-link :to="`/users/${ item.user.id }`">
+                {{ item.user.id }}
+              </nuxt-link>
+            </small>
           </h4>
           <div class="body">
-            {{ item.body.slice(0, 80) }}・・・
+            {{ item.body.slice(0, 100) }}・・・
           </div>
         </li>
       </ul>
