@@ -50,11 +50,13 @@ export default {
 </script>
 
 <style>
+/* 全体 */
 .container {
   min-height: 100vh;
   padding: 16px;
 }
 
+/* ヘッダー */
 h1 {
   margin: 16px;
   padding: 12px;
@@ -79,6 +81,7 @@ span {
   color: rgba(0, 122, 204, 1);
 }
 
+/* 投稿文 */
 .body {
   font-size: 12px;
 }
